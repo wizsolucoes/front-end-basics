@@ -36,3 +36,13 @@ section h1{
     border-radius: 5px;
     margin-top: 5px;
 }
+
+.number{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.number .randon{
+    max-width: 1024px;
+    margin: 0 auto;
+}
