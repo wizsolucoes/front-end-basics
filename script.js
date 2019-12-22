@@ -26,15 +26,31 @@ function gerar(){
     console.log('O array é: ', numeros)
     console.log('--------------')
 
-    this.crescente = this.numeros
-    this.crescente.sort(sortCrescente);
-    console.log('Ordenado', this.crescente)
+    // ARRAY ORDENADO
+    this.numCrescente(this.numeros);
+    
+    
+    // this.crescente = this.numeros
+    // this.crescente.sort(sortCrescente);
+    // console.log('Ordenado', this.crescente)
     // document.getElementById("crescent").innerHTML = this.crescente.toString().replace(/,/g, ', ');
 
-    this.decrescente = this.numeros
-    this.decrescente.sort(sortDescrescente);
-    console.log('Desordenado', this.decrescente)
+    // ARRAY DESORDENADO
+    // this.decrescente = this.numeros
+    // this.decrescente.sort(sortDescrescente);
+    // console.log('Desordenado', this.decrescente)
     // document.getElementById("decrescent").innerHTML = this.decrescente.toString().replace(/,/g, ', ');
+    
+    // ARRAY PAR
+    
+}
+
+function numCrescente(a){
+    this.crescente = a;
+    this.crescente = this.crescente.sort(sortCrescente)
+    console.log('Ordenado', this.crescente)
+    document.getElementById("crescent").innerHTML = this.crescente.toString().replace(/,/g, ', ');
+    return this.crescente;
 }
 
 function sortCrescente(a, b){
